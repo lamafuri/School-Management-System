@@ -1,0 +1,96 @@
+@media (max-width:700px) {
+    .mainBody {
+        background-size: auto 100vh;
+        overflow-x: hidden;
+    }
+    #logoLink{
+        margin-left: 0.7rem;
+    }
+    #home{
+        font-size: 8px;
+        width: 100vw;
+    }
+
+    #home .info {
+        font-size: 2em;
+    }
+
+    #introduction #introPara {
+        line-height: 1.7;
+        width: 90vw;
+    }
+
+    #introduction video {
+        width: 90vw;
+    }
+
+    #introduction .content {
+        grid-template-columns: repeat(auto-fit, minmax(312px, 1fr));
+        margin-right: 5vw;
+        gap: 5vw;
+    }
+
+    #whyNist {
+        width: 100vw;
+    }
+
+    #whyNist img {
+        float: none;
+    }
+    /* visMis */
+    #visMis {
+        width: 100vw;
+        background-color: white;
+        padding-bottom: 20px;
+        justify-content: center;
+        margin: 2rem 0;
+    }
+
+    #visMis .box {
+        width: 92vw;
+        height: 200px;
+        border-radius: 5px;
+        justify-self: center;
+        margin: 20px 0 0 0;
+    }
+
+    .wrapper {
+        width: 90vw;
+    }
+
+    .card {
+        position: relative;
+        left: calc(50vw - 170px);
+        margin: 0 100vw 0 0;  
+    }
+}
+
+@media (max-width:1030px) {
+    /* nav */
+    .menu{
+        display: block;
+        text-align: right;
+        padding-right: 2rem;
+    }
+    .horNav{
+        display: none;
+    }
+    
+
+    /* footer to column */
+    footer{
+        margin: 0;
+    }
+    footer .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        height: 750px;
+        gap: 0;
+
+    }
+    .footer *{
+        font-size: 12px;
+    }
+
+}

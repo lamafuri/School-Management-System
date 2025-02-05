@@ -1,0 +1,127 @@
+[
+    {
+        "NAME": "LAXMAN GANWALI (HOD)",
+        "Subject": "ENGLISH",
+        "photo_url": "https://i.ibb.co/B2S3GHT/lg.jpg"
+    },
+    {
+        "NAME": "BINITA KANDEL",
+        "Subject": "ENGLISH",
+        "photo_url": "https://i.ibb.co/5W7fp2J/bk.jpg"
+    },
+    {
+        "NAME": "KRISHNA THAPA MAGAR (HOD)",
+        "Subject": "MATH",
+        "photo_url": "https://i.ibb.co/CKxrDVW/ktm.jpg"
+    },
+    {
+        "NAME": "BHIM RAWAL",
+        "Subject": "MATH",
+        "photo_url": "https://i.ibb.co/QPW0vRs/br.jpg"
+    },
+    {
+        "NAME": "AMRIT GAUTAM",
+        "Subject": "MATH",
+        "photo_url": "https://i.ibb.co/XJw5M0H/ag.jpg"
+    },
+    {
+        "NAME": "BHARAT BAHADUR BHANDARI(HOD)",
+        "Subject": "NEPALI",
+        "photo_url": "https://i.ibb.co/nnDFKLj/bbb.jpg"
+    },
+    {
+        "NAME": "SUSMA TIMILSINA",
+        "Subject": "NEPALI",
+        "photo_url": "https://i.ibb.co/BL0TB8B/st-nep.jpg"
+    },
+    {
+        "NAME": "HEM PRABHAS ADHIKARI",
+        "Subject": "NEPALI",
+        "photo_url": "https://i.ibb.co/6ZLzbBy/ha.jpg"
+    },
+    {
+        "NAME": "SABIN RAJ BAGALE (HOD)",
+        "Subject": "COMPUTER",
+        "photo_url": "https://i.ibb.co/CBb214m/srb.jpg"
+    },
+    {
+        "NAME": "ANEESH KARKI",
+        "Subject": "COMPUTER",
+        "photo_url": "https://i.ibb.co/0fxpcGP/ak.jpg"
+    },
+    {
+        "NAME": "GANESH BHATTA",
+        "Subject": "COMPUTER",
+        "photo_url": "https://i.ibb.co/GkPVXfb/gb.jpg"
+    },
+    {
+        "NAME": "RAJIB CHANDRA BELBASE(HOD)",
+        "Subject": "PHYSICS",
+        "photo_url": "https://i.ibb.co/rbXngHb/rcb.jpg"
+    },
+    {
+        "NAME": "DHANIK KUSHWAHA",
+        "Subject": "PHYSICS",
+        "photo_url": "https://i.ibb.co/VCCkCYH/dlk.jpg"
+    },
+    {
+        "NAME": "ANIL GHIMIRE",
+        "Subject": "PHYSICS",
+        "photo_url": "https://i.ibb.co/TRQ7Nxs/ag-phy.jpg"
+    },
+    {
+        "NAME": "SUJAN TIMILSINSA",
+        "Subject": "PHYSICS",
+        "photo_url": "https://i.ibb.co/zVxXPqq/st.jpg"
+    },
+    {
+        "NAME": "NIRANJAN DAHAL",
+        "Subject": "PHYSICS",
+        "photo_url": "https://i.ibb.co/qBgh2VP/nd.jpg"
+    },
+    {
+        "NAME": "SUNIL CHAPAGAIN (HOD)",
+        "Subject": "CHEMISTRY",
+        "photo_url": "https://i.ibb.co/hmJxTjF/sc.jpg"
+    },
+    {
+        "NAME": "PRAMOD ACHARYA",
+        "Subject": "CHEMISTRY",
+        "photo_url": "https://i.ibb.co/2S9LQS1/pa.jpg"
+    },
+    {
+        "NAME": "CHANDA SUBEDI",
+        "Subject": "CHEMISTRY",
+        "photo_url": "https://i.ibb.co/Sy26t85/cs.jpg"
+    },
+    {
+        "NAME": "AAYUSH SEDAIN",
+        "Subject": "CHEMISTRY",
+        "photo_url": "https://i.ibb.co/DKppjyP/ts.jpg"
+    },
+    {
+        "NAME": "NAWARAJ SAPKOTA",
+        "Subject": "CHEMISTRY",
+        "photo_url": "https://i.ibb.co/9q7Zk7K/ns.jpg"
+    },
+    {
+        "NAME": "PUNAM CHAMLING RAI",
+        "Subject": "CHEMISTRY",
+        "photo_url": "https://i.ibb.co/MgGtNwx/pr.jpg"
+    },
+    {
+        "NAME": "APEKSHYA DAHAL",
+        "Subject": "CHEMISTRY",
+        "photo_url": "https://i.ibb.co/ftQk7WN/ad.jpg"
+    },
+    {
+        "NAME": "EASTER PUN",
+        "Subject": "BIOLOGY",
+        "photo_url": "https://i.ibb.co/mvs8QpT/ep.jpg"
+    },
+    {
+        "NAME": "SHANT KUMAR HUMAGAIN",
+        "Subject": "BIOLOGY",
+        "photo_url": "https://i.ibb.co/Dg6C5t9/skh.jpg"
+    }
+]

@@ -1,0 +1,266 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+
+}
+body,html{
+    height: 100%;
+    width: 100%;
+    scroll-padding-top:110px;
+    overflow-x: hidden;
+}
+nav{
+    display: grid;
+    grid-template-columns:1fr 2fr 1fr;
+    height:110px;
+    background-color: #F5EFFF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 100;
+    
+}
+nav .logo{
+    padding-left: 2rem;
+    height: 110px;
+    display: flex;
+    align-items: center;
+}
+nav .logo img{
+    width: 10vw;
+    min-width:7rem;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110px;
+    font-size: 12px;
+}
+.navBar{
+   padding-right:2rem ;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 110px;
+}
+.navBar a{
+    color: black;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+section{
+    min-height: (100vh - 110px);
+    width:100%;
+    border-bottom: 1px solid black;
+    background-color: #E5D9F2;
+    padding: 2rem;
+}
+/* dashboard */
+#dashboard{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(20rem , 1fr));
+    gap: 2rem;
+    margin-top: 110px;
+    z-index: 1;
+}
+.box{
+    background-color: white;
+    height: 12rem;
+    color: rgb(255, 0, 43);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    transition:transform 0.3s ease-out;
+    font-size: 1.5rem;
+    font-weight: 700;
+    box-shadow: -5px 5px 10px rgba(46, 46, 58,.7);
+    border-radius: 10px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.box p{
+    backdrop-filter: blur(5px); /* Apply blur effect */
+    display: inline-block;
+    opacity: 1;
+    z-index: 10;
+    
+}
+.box:hover{
+    cursor: pointer;
+    transform: scale(0.9);
+}
+#facultyBox{
+    background-image: url(../images/faculty_back_img.jpg);
+}
+#userBox{
+    background-image: url(../images/user_back_img.png);
+
+}
+#msgBox{
+    background-image: url(../images/message_received_img.webp);
+    background-size: cover;
+    background-position: center center;
+
+}
+.res-table{
+    overflow-x: auto;
+}
+table{
+    max-width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    overflow-x: auto;
+}
+th,td{
+    padding:1rem 2vw ;
+}
+.but{
+    height: 2rem;
+    width:8rem;
+    border: none;
+    border-radius: 4px;
+}
+.but a{
+    color: white;
+    text-decoration: none;
+}
+
+.change{
+    background-color: blue;
+
+}
+.delete{
+    background-color: rgb(136, 9, 9);
+}
+.delete:hover{
+    cursor: pointer;
+}
+.create{
+    display: flex;
+    justify-content: right;
+}
+.create button{
+    background-color: black;
+}
+
+button.single{
+    width: 4rem;
+    height:1.7rem;
+    border: none;
+}
+button.single a{
+    color: wheat;
+    text-decoration: none;
+}
+
+.confirmBox{
+   position: fixed;
+   z-index: 100;
+   top:50vh;
+   left: 50vw;
+   transform: translate(-50%,-50%);
+   background-color: white;
+   border-top: 1rem solid #F62447;
+    width: min(685px , 80vw);
+    padding: min(1rem , 1vw);
+}
+#confirmBox{
+    display: none;
+}
+.confirmBox .upper{
+    display: flex;
+    border-bottom: 3px solid #ECECEC;
+    padding-bottom: min(1rem , 2vw);
+}
+.fa-triangle-exclamation{
+    color: #F62447;
+    font-size: min(4rem , 12vw);
+    /* margin:1.5rem 1rem; */
+    margin:1.5rem min(1rem , 1vw);
+}
+.confirmBox .info{
+    margin-top:min(1.5rem , 10vw);
+}
+.confirmBox .info h2{
+    font-weight: 450;
+    font-size: min(4vw , 23px);
+}
+.confirmBox .info p{
+    font-size: min(14px , 2.5vw);
+    margin-top: .5rem;
+}
+.buttons{
+    margin: min(1rem , 2vw);
+    display: flex;
+    justify-content: right;
+    gap:1rem;
+}
+.buttons button{
+    height: min(1.8rem , 5vw);
+    width: 4rem;
+    cursor: pointer;
+}
+.buttons #cancel{
+    border: 2px solid #78B3F2;
+    color: #78B3F2;
+}
+.buttons #delete{
+    border: #F62447;
+    background-color: #F62447;
+    color: white;
+}
+
+#profilePic{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+
+}
+#profile-dropdown{
+    background-color: #78B3F2;
+    height:100px;
+    width: 10rem;
+    position: absolute;
+    top: 110px;
+    right: min(10px , 5vw);
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.7);
+    background-size: cover;
+    border-radius: 15px;
+    backdrop-filter: blur(3px);
+    box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.7),-5px -5px 2px rgba(255, 255, 255, 0.4);
+    display: none;
+}
+#profile-dropdown button{
+    width: 85%;
+    height: 2rem;
+    margin:1rem 0 0 1rem;
+    background:none;
+    border:3px solid red;
+    border-radius: 10px;
+}
+#profile-dropdown button,#profile-dropdown button i{
+    color: red;
+    font-size: 1rem;
+}
+#profile-dropdown button:hover{
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+#profile-dropdown button:hover i{
+    color: white;
+}
+
+#username{
+    position: absolute;
+    top:86px;
+    right: min(10vw, 44px);
+}

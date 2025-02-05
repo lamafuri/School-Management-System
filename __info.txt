@@ -1,0 +1,8 @@
+login_SignUp.css files contains styling for:
+    contact_us
+    login
+    signup 
+    forgot password pages;
+db_connection.php is included in all the php files;
+
+

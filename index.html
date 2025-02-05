@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.media.css">
+    <script src="https://kit.fontawesome.com/80934cd64a.js" crossorigin="anonymous"></script>
+    <!-- <script src="//code.tidio.co/kwydwspdxqjag7473nc9pk5r2djspkzy.js" async></script> -->
+    <script> window.chtlConfig = { chatbotId: "6224372852" } </script>
+    <script async data-id="6224372852" id="chatling-embed-script" type="text/javascript"
+        src="https://chatling.ai/js/embed.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="upper">
+            <a id="logoLink" href="#home"><img id="logoImg" src="images/logo.png" alt="loading"></a>
+            <a href="#home"><i class="fa fa-home" style="font-size: 20px"></i></a>
+            <div class="horNav">
+                <div class="box">
+                    <a class="underline">ABOUT US<i class="fa fa-angle-down" style="font-size:18px"></i></a>
+                    <ul class="dropdown aboutUs">
+                        <li><a href="#introduction">Introduction</a></li>
+                        <li><a href="#visMis">Vission & Mission</a></li>
+                        <li><a href="#msgChairman">Message from Chairman</a></li>
+                        <li><a href="#">Code of Conduct</a></li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <a class="underline">ACADEMICS <i class="fa fa-angle-down" style="font-size:18px"></i></a>
+                    <ul class="dropdown academics">
+                        <li><a href="#plus2">+2 Program</a></li>
+                        <li><a href="#whyNist">Why NSS?</a></li>
+                        <li><a href="#">Our Philosophy</a></li>
+                        <li><a href="#">Student Learning Assessment</a></li>
+                        <li><a href="#">Faculty Details</a></li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <a class="underline">FACILITIES<i class="fa fa-angle-down" style="font-size:18px"></i></a>
+                    <ul class="dropdown facilities">
+                        <li><a href="#facilities">ECA</a></li>
+                        <li><a href="#facilities">Health Care Services</a></li>
+                        <li><a href="#facilities">Trasportation</a></li>
+                        <li><a href="#facilities">Uniform</a></li>
+                        <li><a href="#facilities">Cafeteria</a></li>
+                        <li><a href="#facilities">Deposition of Mobile</a></li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <a class="underline">ADMISSION<i class="fa fa-angle-down" style="font-size:18px"></i></a>
+                    <ul class="dropdown admission">
+                        <li><a href="#">New Admission</a></li>
+                        <li><a href="#">Admission Policies & Procedures</a></li>
+                        <li><a href="#">Scholarships</a></li>
+                        <li><a href="#">+2 Registration Form</a></li>
+                    </ul>
+                </div>
+                <a href="contactUs/index.php" target="_blank" class="underline">CONTACT US</a>                
+                <a href="loginForm/index.php" target="_blank" id="logIn" class="underline">LOG IN</a>
+            </div>
+            <div class="menu">
+                <i class="fa-solid fa-bars" id="show"></i>
+            </div>
+        </nav>
+        <nav id="sideBar">
+            <div class="verNav">
+                <div class="cross">
+                    <i class="fa-solid fa-xmark" id="hide"></i>
+                </div>
+                <div class="box">
+                    <a class="underline mobAnchor">About Us<i class="fa fa-angle-down" style="font-size:18px;color:white;"></i></a>
+                    <ul class="dropdown aboutUs mobDD">
+                        <li><a href="#introduction">Introduction</a></li>
+                        <li><a href="#visMis">Vission & Mission</a></li>
+                        <li><a href="#msgChairman">Message from Chairman</a></li>
+                        <li><a href="#">Code of Conduct</a></li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <a class="underline mobAnchor">Academics <i class="fa fa-angle-down" style="font-size:18px;color:white;"></i></a>
+                    <ul class="dropdown academics mobDD">
+                        <li><a href="#plus2">+2 Program</a></li>
+                        <li><a href="#whyNist">Why NSS?</a></li>
+                        <li><a href="#">Our Philosophy</a></li>
+                        <li><a href="#">Student Learning Assessment</a></li>
+                        <li><a href="#">Faculty Details</a></li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <a class="underline mobAnchor">Facilities<i class="fa fa-angle-down" style="font-size:18px;color:white;"></i></a>
+                    <ul class="dropdown facilities mobDD">
+                        <li><a href="#facilities">ECA</a></li>
+                        <li><a href="#facilities">Health Care Services</a></li>
+                        <li><a href="#facilities">Trasportation</a></li>
+                        <li><a href="#facilities">Uniform</a></li>
+                        <li><a href="#facilities">Cafeteria</a></li>
+                        <li><a href="#facilities">Deposition of Mobile</a></li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <a class="underline mobAnchor">Admission<i class="fa fa-angle-down" style="font-size:18px;color:white;"></i></a>
+                    <ul class="dropdown admission mobDD">
+                        <li><a href="#">New Admission</a></li>
+                        <li><a href="#">Admission Policies & Procedures</a></li>
+                        <li><a href="#">Scholarships</a></li>
+                        <li><a href="#">+2 Registration Form</a></li>
+                    </ul>
+                </div>
+                <a href="contactUs/index.php" target="_blank" class="underline">Contact Us</a>               
+                <a href="loginForm/index.php" target="_blank" id="logIn" class="underline">Log In</a>
+
+        </nav>
+        <div class="mainBody">
+            <!-- home -->
+            <section id="home">
+                <div id="homeContent">
+                    <p class="quote"><span>Learning</span> is a <span>Tressure</span> that will follow its<span>
+                            owner</span>
+                        everywhere
+                    <p class="info">
+                        "NIST (NSS) is a premier education provider dedicated to shaping the future by offering
+                        world-class
+                        academic programs, exceptional faculty, and a holistic learning environment that empowers
+                        students
+                        to
+                        fetch their <span
+                            style="color: rgb(168, 24, 168);font-weight: bold; font-size: larger;">treasure</span>"
+                    </p>
+                    </p>
+                </div>
+            </section>
+            <!-- aboutUs -->
+            <section id="introduction">
+                <div id="actualIntro">
+                    <h1>Introduction</h1>
+                    <div class="content">
+                        <p id="introPara">
+                            NIST National School of Sciences is a premier education institution, which was established
+                            in
+                            1993. It is situated at Lainchour, strategically important location in the Kathmandu valley,
+                            and
+                            is one of the constituent institutions under the NIST Foundation. The school has been
+                            conducting
+                            Plus 2 programme (Grade 11 – 12), now Upper Secondary school classes, both in Science and
+                            Management for the last three decades. The school follows the national curriculum under the
+                            National Examination Board (NEB), Nepal. The NIST Foundation was initiated by a group of
+                            scientistsand academicians.
+                        </p>
+                        <div id="video">
+                            <video loop autoplay muted playsinline>
+                                <source src="images/HDnssVideo.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="visMis">
+                <div class="box vision">
+                    <p><i class="fa-solid fa-eye"></i> Vision</p>
+                </div>
+                <div class="box mission">
+                    <p><i class="fa-solid fa-crosshairs"></i> Misssion</p>
+                </div>
+                <div class="box philo">
+                    <p><i class="fa-solid fa-book-open"></i> Our Philosophy</p>
+                </div>
+            </section>
+            <section id="msgChairman">
+                <div id="msg">
+                    <h1>Message from the Chairman</h1>
+                    <p>
+                    <div id="imageInfo">
+                        <img id="baralPP" src="images/baralSir.jpg" alt="error">
+                        <p>
+                            <b>Dr.Madhav Prasad Baral</b>
+                            <i style="text-align: center;font-weight: 600;"> Chairman</i>
+                        </p>
+                    </div>
+                    The National School of Sciences (NSS) is a premier education institute managed by the NIST
+                    Foundation that was established nearly three decades ago. The core objectives of the foundation,
+                    as an apex body, have been to establish education institutions, and provide students academic
+                    programmes from pre–school to high school to university. Today, there are nine academic
+                    institutions under the NIST Foundation across the Valley, and they offer different academic
+                    programmes such as Science, Management, IT, Pharmacy, Food Technology, Microbiology among
+                    others. I attribute the success of the institutions to the hard work, dedication and commitment
+                    of our teachers, admin staff and leadership team and trust and support of parents, students and
+                    other stakeholders.
+
+                    During this long academic journey, thousands of students have graduated from the National School
+                    of Sciences, let alone other institutions under the NIST Foundation. Therefore, we will focus
+                    our
+                    resources on building a strong leadership team, training and developing teachers and enhancing
+                    the facilities so that all these institutions are adequately equipped, and able to produce
+                    graduates who are globally competitiv5e, adaptable and lifelong learners.
+                    </p>
+                </div>
+            </section>
+            <section id="plus2">
+                <h1>Plus 2 Programme</h1>
+                <p class="para">
+                    The school runs upper secondary (Grade 11 and 12) courses based on the national curriculum
+                    prescribed by the National Examination Board (NEB). Earlier known as Plus 2 programme, this is
+                    offered as a separate stand–alone two-year course that prepares students for undergraduate courses
+                    at university. Upon successful completion of the Secondary Education Examination (SEE) i.e. Grade
+                    10, conducted by the NEB, students are eligible to pursue Grade 11–12 course.
+
+                    Upon enrolling in the course, students have the flexibility to choose elective subjects as per their
+                    interest and career goals. The core subjects are mandatory for every student to pursue, and are
+                    designed to provide in-depth knowledge and understanding. The academic programme is led by the
+                    Principal ably supported by the Programme In–charges, Coordinators and a competent team of academic
+                    faculty in addition to an experienced team of administrators. Currently, the school is providing
+                    subjects related to Science and Management, and plans are afoot to offer other subjects related to
+                    Law, Arts and Humanities in the future.
+                </p>
+                <br>
+                <h3 class="mini-header">Subjects Offered</h3>
+                <table border="1">
+                    <tr>
+                        <th>NO.</th>
+                        <th>Grade 11 & Grade 12</th>
+                    </tr>
+                    <tr>
+                        <td>01.</td>
+                        <td>English</td>
+                    </tr>
+                    <tr>
+                        <td>02.</td>
+                        <td>Physics</td>
+                    </tr>
+                    <tr>
+                        <td>03.</td>
+                        <td>Mathematics or Social and Life Skills</td>
+                    </tr>
+                    <tr>
+                        <td>04.</td>
+                        <td>Physics/Accountancy</td>
+                    </tr>
+
+                    <tr>
+                        <td>05.</td>
+                        <td>Chemistry/Economics</td>
+                    </tr>
+                    <tr>
+                        <td>06.</td>
+                        <td>
+                            Mathematics,Biology,Computer Science,etc
+                        </td>
+                    </tr>
+                </table>
+            </section>
+            <section id="whyNist">
+                <div id="content">
+                    <h1>Why NIST?</h1>
+                    <p>
+                        <img src="images/whyNist.jpg" alt="loading"><br>
+                        Located at the heart of the capital city, Kathmandu and easily accessible because of the
+                        extensive network of public transport, the National School of Sciences, popularly known as NIST
+                        College has been at the helm of Upper Secondary school education (Grade 11–12), earlier known as
+                        Plus 2, for nearly three decades. Started with a humble beginning from a total of 157 students
+                        and 15 staff including administrative and support staff in the Science stream only, the National
+                        School of Sciences has come a long way. The annual intake in the school hovers at around 1,200
+                        students in Grade 11 (both Science and Management programs). Through all these years of
+                        providing academic service for aspiring students, the National School of Sciences has rightfully
+                        carved a niche for itself and is acknowledged for providing quality education within an
+                        affordable fee structure.
+
+                        Enriching the learning experience of students has always been, and will be at the core of our
+                        vision and mission, and we are always guided by the need to provide a conducive environment and
+                        services for our learners to make their overall experience truly elevating. The need of the hour
+                        demands a paradigm shift in the way we cater to the educational needs of the new generation of
+                        learners. Today, education has to be imparted effectively through a balanced and holistic
+                        approach to teaching–learning i.e. the development of the learner’s intellectual, emotional,
+                        social, and personal skills, physical well-being, and artistic, creative, and spiritual
+                        potential. The school seeks to engage students through a participatory approach to
+                        teaching–learning process, and encourages personal and collective responsibility.
+                    </p>
+
+                </div>
+            </section>
+            <section id="facilities">
+                <h1>Facilities</h1>
+                <div class="wrapper">
+                    <i id="left" class="fa-solid fa-chevron-left arrow"></i>
+                    <ul class="carousel">
+                        <li class="card">
+                            <div class="img"><img src="images/dress.jpg" alt="img"></div>
+                            <h2>Unifrom</h2>
+                            <a href="#">Know more...</a>
+                        </li>
+                        <li class="card">
+                            <div class="img "><img src="images/eca.jpg" alt="img"></div>
+                            <h2>ECA</h2>
+                            <a href="#">Know more...</a>
+                        </li>
+                        <li class="card">
+                            <div class="img"><img src="images/library.jpg" alt="img"></div>
+                            <h2>Library</h2>
+                            <a href="#">Know more...</a>
+                        </li>
+                        <li class="card">
+                            <div class="img"><img src="images/bus.jpg" alt="img"></div>
+                            <h2>Transportation</h2>
+                            <a href="#">Know more...</a>
+                        </li>
+                        <li class="card">
+                            <div class="img"><img src="images/health.jpg" alt="img"></div>
+                            <h2>Health Services</h2>
+                            <a href="#">Know more...</a>
+                        </li>
+                        <li class="card">
+                            <div class="img"><img src="images/cafe.jpg" alt="img"></div>
+                            <h2>Cafeteria</h2>
+                            <a href="#">Know more...</a>
+                        </li>
+                        <li class="card">
+                            <div class="img"><img src="images/mobile.jpg" alt="img"></div>
+                            <h2>Deposition of Mobile</h2>
+                            <a href="#">Know more...</a>
+                        </li>
+
+                    </ul>
+                    <i id="right" class="fa-solid fa-chevron-right arrow"></i>
+                </div>
+            </section>
+
+            <footer>
+                <div class="footer">
+                    <div id="shortInfo">
+                        <img src="images/logo-white.png" alt="img">
+                        <p>National School of Sciences is one of the premier education institutions, which was
+                            established in 1993. It is situated at Lainchour, strategically important location in the
+                            Kathmandu valley, and is one of the constituent institutions under the NIST Foundation.</p>
+
+                    </div>
+                    <div id="links">
+                        <h3>Links</h3>
+                        <ul>
+                            <li><a href="#">Admission</a></li>
+                            <li><a href="#plus2">Plus2 Programme</a></li>
+                            <li><a href="#">Our Philosophy</a></li>
+                            <li><a href="#">Notice | News</a></li>
+                        </ul>
+                    </div>
+                    <div id="footerContact">
+                        <h3>CONTACT</h3>
+                        <p>
+                            Lainchour, Kathmandu, Nepal<br>
+                            G.P.O. 8659 | Fax No.: +977 14428724 <br>
+                            Phone: +977 (1)4523706 / 4522050 / 4535408 / <br>
+                            4529035 / 4528724 / 4535243 <br>
+                            Email: info@nss.edu.np, nistcoll@gmail.com <br>
+                            <br>
+                        <div id="icons">
+                            <div id="iconLogoBox"><a href="https://www.facebook.com/nssscience/" target="_blank"><i
+                                        class="fa-brands fa-facebook"></i></a></div>
+                            <div id="iconLogoBox"><a href="https://x.com/home" target="_blank"><i
+                                        class="fa-brands fa-twitter"></i></a></div>
+                            <div id="iconLogoBox"><a href="https://www.youtube.com/channel/UC4G9OSChqUlsD4JNTrAr3Gw"
+                                    target="_blank"><i class="fa-brands fa-youtube"></i></a></div>
+                            <div id="iconLogoBox"><a
+                                    href="https://np.linkedin.com/company/national-school-of-sciences-lainchour"
+                                    target="_blank"><i class="fa-brands fa-linkedin"></i></a></div>
+                            <div id="iconLogoBox"><a href="https://www.instagram.com/nistnss/?hl=en" target="_blank"><i
+                                        class="fa-brands fa-instagram"></i></a></div>
+                        </div>
+                        </p>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p><i class="fa-regular fa-copyright"></i> Breakers | All Rights Reserved.</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

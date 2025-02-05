@@ -1,0 +1,578 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+    text-decoration: none;
+    color: black;
+    list-style: none;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 110px; /* Adds 110px of padding at the top when scrolling */
+}
+p{
+    font-size: 15px;
+}
+
+.container {
+    overflow-x: hidden; /*to avoid horizontal scrolling*/
+}
+
+nav.upper {
+    display: grid;
+    width: 100vw;
+    grid-template-columns:1fr 1fr 6fr;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 100;
+    /* to make text be behind */
+}
+.horNav{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav.upper a {
+    margin-top: 2.5rem;
+    position: relative;
+}
+nav.upper .underline::after{
+    content: ' ';
+    height: 2.5px;
+    width: 0%;
+    background-color: blue;
+    display: block;
+    margin: auto; 
+    transition: width .4s ease-out;
+}
+#logIn {
+    margin-right: 4rem;
+}
+
+#logoLink{
+    height: 6rem;
+    width: 10rem;
+    margin-top: 1rem;
+    margin-left: 3rem;
+
+}
+#logoImg {
+    transition: transform .5s ease;
+}
+
+#logoImg:hover {
+    transform: scale(0.9);
+}
+
+.upper a:hover {
+    color: blue;
+    cursor: pointer;
+}
+.upper a:hover::after{
+    width: 60%;
+}
+
+.upper a:hover i {
+    color: blue;
+}
+
+.upper .box {
+    margin-top: 2.5rem;
+    position: relative;
+}
+.upper .dropdown {
+    text-align: left;
+    position: absolute;
+    left: 3em;
+    font-size: .95em;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    background-color: white;
+}
+
+.upper .dropdown>li {
+    min-width: 10rem;
+    margin: 1rem;
+    border-bottom: 1px solid;
+    padding-bottom: 0.3rem;
+
+}
+
+.upper .box:hover .dropdown {
+    visibility: visible;
+    opacity: 1;
+}
+/* sideBar */
+.menu {
+    display: none;
+}
+.menu i{
+    font-size: 1.3rem;
+    margin-top: 2.5rem;
+    transition: .2s ease-out;
+}
+.menu i:hover{
+    transform: scale(.9);
+    cursor: pointer;
+}
+#sideBar{
+    margin-top: 110px;
+    z-index: 10;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    transform:translateX(-100%);
+    transition:transform .5s ease-out;
+}
+.verNav{
+    background: rgba(0, 0, 0, 0.6); 
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    height: 40vh;
+    width: 100vw;
+    overflow: auto;
+    padding: 2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.verNav .box a{
+    color: white;
+}
+.verNav a{
+    color: white;
+}
+.verNav .cross{
+    display:inline-block;
+   background-color: #A294F9;
+   width: fit-content;
+   padding: .7rem 1rem;
+   position: sticky;
+   top: 0;
+   margin-left: 70vw;
+   z-index: 10;
+   border-radius: 50%;
+}
+.verNav ul{
+    margin:0 0 0 1.5rem;
+    display: none;
+}
+.verNav ul li{
+    padding: 8px;
+}
+.verNav ul li a{
+    color: white;
+}
+.mainBody{
+    width: 100vw;
+    background-image: url(images/college_pic.jpg);
+    background-size: 100vw 200vh;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    display: grid;
+    /* grid-template-rows: repeat(4,calc(633px - 110px)) 770px 600px 633px calc(633px - 110px); */
+    overflow-y: hidden; /* two scroll bar was displayed so*/
+}
+
+/* ----home---- */
+#home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    position: relative;
+    margin-top: 110px;
+    min-height: calc(100vh - 110px);
+    height: auto;
+    /*the height was not fully taken*/
+}
+
+#home #homeContent{
+    background-color: rgba(0, 0, 0, .7);
+    box-shadow: 0 0 15px black;
+    padding: 12px;
+    cursor: grab;
+    border-radius: 5px;
+
+}
+#home .quote {
+    letter-spacing: 0.05em;
+    word-spacing: 0.1em;
+    font-size: 3em;
+    font-weight: 600;
+    display: inline-block;
+    width: 75vw;
+    color: rgb(204, 198, 198);
+}
+
+.quote>span {
+    color: purple;
+    font-weight: 600;
+}
+
+.info {
+    font-size: 1.2em;
+    width: 75vw;
+    color: rgb(212, 207, 207);
+}
+
+#home #homeContent {
+    transition: transform 0.3s ease;
+}
+ #homeContent:hover, #homeContent:hover.info, #homeContent:hover.quote{
+    transform: scale(1.05);
+ }
+/* introduction */
+#introduction{
+    background-color: rgba(45, 84, 119, 0.3);
+    padding: 2rem 1rem;
+    gap: 2rem;
+    /* min-height: calc(633px - 110px); */
+    height: fit-content;
+    width: 100vw;
+    font-size: 16px;
+}
+#introduction .content{
+    display: grid; 
+    /* grid-template-columns: auto 1fr; */
+    grid-template-columns:repeat(auto-fit , minmax(600px ,1fr));
+    gap: 1rem;
+    justify-content: center;  
+    justify-self: center;  
+}
+/* for all header */
+h1{
+    color: #FFB606;
+    font-size: 2rem;
+    padding: 1rem 0 ;
+}
+#introduction #introPara{
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.6);
+    min-width: 350px;
+    line-height: 2;
+    word-spacing: .3rem;
+    padding:1rem;
+}
+#introduction video{
+    height: 20rem;
+    position: relative;
+    margin-right: 2rem;
+}
+/* vision & mission */
+#visMis{
+    background-color: white;
+    display: grid; 
+    grid-template-columns:repeat(auto-fit , minmax(25rem ,1fr));
+    justify-content: space-around;
+    align-items: center;
+    min-height: calc(633px - 110px);
+    height: auto;
+    width: 100vw;
+    /* background-color: black; */
+    
+}
+#visMis .box{
+    height: 15rem;
+    margin-left:1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#visMis .box:hover::before{
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 0, 255, 0.3);
+    border-radius: 5px;
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+#visMis .box p , #visMis .box i{
+    font-size: 1.5rem;
+    z-index: 3;
+    color:white;
+}
+#visMis .vision{
+    background-color: rgb(28, 28, 119);
+    position: relative;
+}
+#visMis .mission{
+    background-color: rgb(40, 136, 40);
+    position: relative;
+}
+#visMis .philo{
+    background-color: rgb(168, 168, 18);
+    position: relative;
+}
+.vision:hover{
+    background-image:url(images/manish\ Vision.jpg) ;
+    background-size: cover;
+}
+
+.mission:hover{
+    background-image: url(images/mission\ baral.jpg);
+    background-size:cover;
+    background-position: center center;
+}
+.philo:hover{
+    background-image:url(images/philo.jpg);
+    background-size:cover;
+}
+/* message from chairman */
+#msgChairman{
+    display: grid;
+    width: 100vw;
+    border-bottom: 1px solid;
+    /* min-height: calc(633px - 110px); */
+    height: fit-content;
+    padding: 1rem;
+
+}
+#imageInfo{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#baralPP{
+    height: 20rem;
+    width: auto;
+}
+#imageInfo p{
+    display: grid;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+}
+#msg{
+    word-spacing:3px;
+    width: 92vw;
+}
+/*plus 2*/
+#plus2{
+    padding: 1rem;
+    border-bottom: 1px solid;
+    /* min-height: calc(100vh - 110px); */
+    height: fit-content;
+    width: 100vw;
+}
+.para{
+    word-spacing: 5px;
+}
+.mini-header{
+    font-size: 1.5em;
+    font-weight: 300;
+    color: blue;
+}
+table{
+    border-collapse:collapse;
+    width: 75vw;
+    height: 316.5px;
+    text-align: left;
+}
+table th,td{
+    padding: 0 1em;
+}
+table th{
+    font-weight: 600;
+} 
+/* Why Nist? */
+#whyNist{
+    padding: 1rem;
+    border-bottom: 1px solid;
+    /* min-height: calc(633 - 110px); */
+    height: fit-content;
+}
+#whyNist img{
+    height:350px;
+    width: auto; 
+    float: left;
+    margin-right: 2rem;
+
+}
+#whyNist #content{
+    padding:0 1rem;
+}
+
+/* facilities */
+#facilities{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 2rem;
+    height: fit-content;
+    border-bottom: 1px solid;
+    justify-content: center;
+}
+#facilities h1{
+    padding: 0 1rem .5rem 1rem;
+}
+.wrapper{
+    height: 400px;
+    width: 100%;
+    background: linear-gradient(to left top, rgb(140, 140, 170), rgb(39, 39, 109));
+    position: relative;
+}
+.carousel{
+    display: inline-flex;
+    height: 100%;
+    align-items: center;
+    overflow: hidden;
+}
+.wrapper i.arrow{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.7);
+}
+
+.wrapper i.arrow:first-child {
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+}
+
+.wrapper i.arrow:last-child {
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+}
+.card {
+    list-style: none;
+    background-color: white;
+    height: 350px;
+    width: 300px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: calc(10rem - 55px);
+    transition: 0.5s ease-in-out;
+    overflow-x: hidden;
+    
+}
+
+.card .img img {
+    height: 250px;
+    width: 250px;
+    object-fit: cover; /*very important*/
+    transition: 0.3s ease-out;
+}
+.card .img img:hover{
+    transform: scaleX(1.1) scaleY(1.05);
+    cursor: pointer;
+}
+.card a{
+    color: blue;
+    font-size: 14px;
+}
+
+/* footer */
+footer{
+    color: white;
+    min-height: calc(100vh - 110px);
+    height: fit-content;
+    margin: 1rem 2rem 0 2rem;
+    display: grid;
+    grid-template-rows: 85% 15%;
+
+}
+.footer{
+    background-color: rgb(7, 50, 70);
+    padding:4rem 0 0 2rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+footer * {
+    color: white;
+}
+#shortInfo p{
+    margin-top: 2rem;
+    line-height: 1.6;
+    word-spacing: 3px;
+    font-weight: 300;
+    width: 90%;
+}
+#links ul li{
+    list-style: disc;
+    margin: 1rem;
+}
+#footerContact p{
+    line-height: 2;
+    word-spacing: 5px;
+}
+#icons{
+    display: flex;
+    gap: 1rem;
+
+}
+#iconLogoBox{ 
+    border: 1px solid white;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    position: relative;
+}
+#icons #iconLogoBox i{
+    font-size: 1.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: 1s ease;  
+}
+#iconLogoBox:hover{
+    background-color: white;
+}
+#iconLogoBox:hover i{
+    color: black;
+}
+.copyright p{
+    font-size: 16px;
+    height: 100%;
+    font-weight: 300;
+    color: darkgray;
+    display: flex;
+    align-items: center;
+    padding-left:4rem;
+}
+.copyright i{
+    color: darkgray;
+    font-size: 1rem;
+    margin: 0 .6rem;
+    font-weight: 290;
+}
+
+
+
