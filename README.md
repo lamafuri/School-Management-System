@@ -1,3 +1,8 @@
+Home Page<br>
+![video_g_web](https://github.com/user-attachments/assets/db129de5-d776-4884-89de-626de784a6c5)
+
+Admin Page (Registration)<br>
+![admin_g_web](https://github.com/user-attachments/assets/58e43eb2-007a-4562-91a1-098e3311eff5)
 
 # School Management System Project
 
@@ -8,7 +13,7 @@ Admin are also capable of deleting other admin account and the comments made in 
 Here, student can submit a registration form remotely from the website and later admin members can view and operate their request accordingly. If admin accept the request the record will be stored in a seperate database table where other registered students details are stored.
 
 ## Demo
-
+For live demo click the link:<br>
 https://lamafuri.kesug.com
 
 ## Documentation
