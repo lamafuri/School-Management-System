@@ -22,6 +22,7 @@ https://lamafuri.kesug.com
 - Admin members can interact with visitors
 - Student can send a registration request which will be later operated by Admin
 - Admin can accept or reject student's registration request
+- After the request is accepted , the student's record gets displayed in `Registered Student` Webpage
 
 
 
