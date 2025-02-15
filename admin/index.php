@@ -53,15 +53,21 @@ if(!isset($_SESSION['username'])){
     <section id="dashboard">
         <div class="box" id="facultyBox"><p>Faculty</p></div>
         <script>document.getElementById("facultyBox").addEventListener('click',()=>{
-            window.location.href = "faculty.html";
+            window.location.href = "faculty.php";
         })</script>
         <div class="box" id="userBox"><p>User</p></div>
-        <div class="box"><p>Students</p></div>
+        <div class="box" id="reg_std"><p>Registered Students</p></div>
         <div class="box" id="reg_req"><p>Registration Request</p> </div>
-        <script>document.getElementById("reg_req").addEventListener('click',()=>{
+        <script>
+        document.getElementById("reg_req").addEventListener('click',()=>{
             window.location.href = "Register/register_request.php";
-            console.log("pass");
-        })</script>
+            
+        })
+        document.getElementById("reg_std").addEventListener('click',()=>{
+            window.location.href = "../Registration/registered_student.php";
+            
+        })
+        </script>
         <div class="box" id="msgBox"><p>Message Received</p></div>
     </section>
     <section id="msg">
