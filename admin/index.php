@@ -57,7 +57,11 @@ if(!isset($_SESSION['username'])){
         })</script>
         <div class="box" id="userBox"><p>User</p></div>
         <div class="box"><p>Students</p></div>
-        <div class="box"><p>Registered Student</p> </div>
+        <div class="box" id="reg_req"><p>Registration Request</p> </div>
+        <script>document.getElementById("reg_req").addEventListener('click',()=>{
+            window.location.href = "Register/register_request.php";
+            console.log("pass");
+        })</script>
         <div class="box" id="msgBox"><p>Message Received</p></div>
     </section>
     <section id="msg">
@@ -90,6 +94,7 @@ if(!isset($_SESSION['username'])){
                 <th>Operator</th>
             </tr>
             <!-- PHP CODE -->
+             <!-- Read Operation -->
             <?php
                 include "../db_connection.php";
                 // echo $db_username ;
@@ -99,7 +104,7 @@ if(!isset($_SESSION['username'])){
                     $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     $sn = 1;
                     foreach($result as $row){
-                        $msgId = $row['SN'];
+                        $msgId = $row['ID'];
                         echo "<tr><td>".$sn++."</td>";
                         echo "<td>".$row['Name']."</td>";
                         echo "<td>".$row['Email']."</td>";
@@ -122,7 +127,6 @@ if(!isset($_SESSION['username'])){
                     document.getElementById('delete').addEventListener('click',()=>{
                         console.log(msgId);
                         window.location.assign("msgDelete.php?msgId=" + msgId); //here i took chatgpt reference
-                        //window.location.href = "msgDelete.php?msgId=" + msgId;
                     })
                     }
             </script>

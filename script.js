@@ -5,7 +5,7 @@ let count = 0 ;
 // console.log(carousel +"<br>"+arrows)
 arrows = Array.from(arrows);
 images = Array.from(images);
-console.log(images);
+// console.log(images);
 let limit = -4;
 let deviceVW = window.innerWidth;
 let toShift = 410;
